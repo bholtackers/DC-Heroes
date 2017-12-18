@@ -10,6 +10,7 @@ body {
   border-color: darkblue;
   border-style: solid;
   border-width: 5px;
+  width: 100%;
 }
 
 h1 {
@@ -19,8 +20,20 @@ h1 {
   padding-top: 40px;
   font-size: 100px;
   font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-  text-shadow: -3px -3px 0 darkblue, 3px -3px 0 darkblue, -3px 3px 0 darkblue, 3px 3px 0 darkblue;
+  text-shadow: -2px -2px 0 darkblue, 2px -2px 0 darkblue, -2px 2px 0 darkblue, 2px 2px 0 darkblue;
 }
+
+h2 {
+  margin: 0px;
+  color: white;
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 40px;
+  font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  text-shadow: -1px -1px 0 darkblue, 1px -1px 0 darkblue, -1px 1px 0 darkblue, 1px 1px 0 darkblue;
+}
+
+
 
 #header-logo {
   float: left;
@@ -28,4 +41,134 @@ h1 {
   margin-top: 25px;
   width: 175px;
   height: 175px;;
+}
+
+#header-heroes {
+  float: right;
+  border-radius: 25px;
+  height: 230px;
+  margin-top: 7px;
+  margin-right: 7px;
+  border-style: solid;
+  border-color: darkblue
+}
+
+#main-container {
+  border-style: solid;
+  border-width: 5px;
+  border-color: darkblue;
+  height: 450px;
+  width: 100%;
+}
+
+#menu-container {
+  overflow: auto;
+  float: left;
+  border-style: solid;
+  border-width: 5px;
+  border-color: blue;
+  width: 20%;
+  height: 440px;
+  background-color: rgb(57, 117, 218);
+}
+
+#hero-container {
+  overflow: auto;
+  float: left;
+  border-style: solid;
+  border-width: 5px;
+  border-color: blue;
+  width: 29%;
+  height: 440px;
+  background-color: rgb(57, 117, 218);
+}
+
+#info-container {
+  overflow: auto;
+  float: left;
+  border-style: solid;
+  border-width: 5px;
+  border-color: blue;
+  width: 49.1%;
+  height: 440px;
+  background-color: rgb(57, 117, 218);
+}
+
+#footer {
+  background-color: rgba(0, 0, 0, 0.0);
+  height: 30px;
+  text-align: center;
+  padding-top: 5px;
+  color: darkblue;
+  font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+}
+
+#main-nav {
+  margin-left: 10px;
+}
+
+#main-nav ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+#main-nav li {
+  display: run-in;
+  width: auto;
+  padding-left: 20px;
+  padding-top: 10px;
+  color: white;
+  font-size: 20px;
+  font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 darkblue, 1px -1px 0 darkblue, -1px 1px 0 darkblue, 1px 1px 0 darkblue;
+}
+
+#main-nav li a{
+  text-decoration: none;
+  color: white;
+}
+
+#main-nav li a:hover {
+  padding: 5px;
+  border-radius: 25px;
+  background-color: blue;
+  border-color: darkblue;
+  border-style: solid;
+}
+
+#heroes {
+  width: 98%;
+  height: 290px;
+  border-color: black;
+  border-style: solid;
+  margin-top: 5px;
+}
+
+#hero-image {
+  width: 30%;
+  height: 290px;
+  float: left;
+}
+
+#hero-name {
+  color: white;
+  float: left;
+  width: 37%;
+  padding-left: 10px;
+  font-size: 20px;
+  font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  text-shadow: -1px -1px 0 darkblue, 1px -1px 0 darkblue, -1px 1px 0 darkblue, 1px 1px 0 darkblue;
+}
+
+#hero-desc {
+  word-wrap: normal;
+  color: white;
+  width: 45%;
+  float: left;
+  padding-left: 10px;
+  font-size: 10px;
+  font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  text-shadow: -1px -1px 0 darkblue, 1px -1px 0 darkblue, -1px 1px 0 darkblue, 1px 1px 0 darkblue;
 }

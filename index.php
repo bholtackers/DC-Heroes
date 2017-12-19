@@ -64,7 +64,7 @@ if (isset($_GET['teamId'])) {
 				<img id="hero-image" src= <?php echo $row['heroImage']; ?> >
 				<p id="hero-name"> <?php echo $row['heroName']; ?></p>
 				<p id="hero-desc1"> <?php echo $row['heroDescription']; ?></p> </br>
-        <a href="index.php?heroId=<?php echo $row['heroId']; ?>">
+        <a href="index.php?teamId=<?php echo $row['teamId']; ?>&heroId=<?php echo $row['heroId']; ?>">
         <nav id="info">info</nav>
       </a>
 			</div>
@@ -84,7 +84,7 @@ if (isset($_GET['teamId'])) {
                           ?>
                           <h2> <?php echo $row2['heroName']; ?></h2> </br>
                           <h3>Info</h3>
-                          <p class="hero-desc2"> <?php echo $row2['heroDescription']; ?></p>
+                          <p class="hero-desc2"> <?php echo $row2['heroInfo']; ?></p>
                           <h3>Powers</h3>
                           <p class="hero-desc2"> <?php echo $row2['heroPower']; ?></p>
 <?php

@@ -1,3 +1,5 @@
+      @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
 body {
   background-color: white;
   margin: 0px;
@@ -113,7 +115,11 @@ h3 {
 }
 
 #main-nav {
-  margin-left: 10px;
+  border-style: solid;
+  border-color: darkblue;
+  border-radius: 25px;
+  margin-left: 5px;
+  width:  80%;
 }
 
 #main-nav ul {
@@ -140,7 +146,6 @@ h3 {
 }
 
 #main-nav li a:hover {
-  padding: 5px;
   border-radius: 25px;
   background-color: blue;
   border-color: darkblue;
@@ -173,44 +178,149 @@ h3 {
 
 
 #hero-desc1 {
+  border-style: solid;
+  border-color: darkblue;
+  border-radius: 15px;
   word-wrap: normal;
   color: white;
   width: 55%;
   float: left;
-  padding-left: 10px;
+  margin-left: 10px;
+  padding-left: 5px;
   font-size: 10px;
   font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
   text-shadow: -1px -1px 0 darkblue, 1px -1px 0 darkblue, -1px 1px 0 darkblue, 1px 1px 0 darkblue;
 }
 
 .hero-desc2 {
+  border-style: solid;
+  border-color: darkblue;
+  border-radius: 15px;
   word-wrap: normal;
   color: white;
   width: 95%;
   float: left;
-  padding-left: 10px;
+  margin-left: 10px;
+  padding-left: 5px;
   font-size: 20px;
   font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
   text-shadow: -1px -1px 0 darkblue, 1px -1px 0 darkblue, -1px 1px 0 darkblue, 1px 1px 0 darkblue;
 }
 
 #info {
+  padding-left: 2px;
+  margin-left: 10px;
   color: white;
   float: left;
-  width: 37%;
+  width: 15%;
   padding-left: 10px;
   font-size: 22px;
   font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
   text-shadow: -1px -1px 0 darkblue, 1px -1px 0 darkblue, -1px 1px 0 darkblue, 1px 1px 0 darkblue;
 }
 
+#info:hover{
+  border-radius: 25px;
+  background-color: blue;
+  border-color: darkblue;
+  border-style: solid;
+}
+
 #teamImage {
-  width: 75%;
+  width: 78%;
   height: 75%;
   margin-top: 5px;
   margin-left: 5px;
   border-radius: 25px;
   border-style: solid;
   border-color: darkblue
+}
 
+.form-rate{
+  width: 99%;
+  display:run-in;
+}
+
+.rate
+{
+    display: inline-block;
+    border: 0;
+    float: left;
+    margin-left: 10px;
+    position: relative;
+}
+/* Hide radio */
+.rate > input[type='radio']
+{
+    display: none;
+}
+/* Order correctly by floating highest to the right */
+.rate > label.lblRating
+{
+    float: right;
+}
+
+/* The star of the show */
+.rate > label.lblRating:before
+{
+    display: inline-block;
+    font-size: 4.0rem;
+    padding: .3rem .2rem;
+    margin: 0;
+    cursor: pointer;
+    font-family: FontAwesome;
+    content: "\f005 "; /* full star */
+}
+/* Zero stars rating */
+.rate > label.lblRating:last-child:before
+{
+    content: "\f006 "; /* empty star outline */
+}
+/* Half star trick */
+.rate label.half:before
+{
+    content: "\f089 "; /* half star no outline */
+    position: absolute;
+    padding-right: 0;
+}
+/* Click + hover color */
+input:checked ~ label.lblRating, /* color current and previous stars on checked */
+label.lblRating:hover, label.lblRating:hover ~ label.lblRating /* color previous stars on hover */
+{
+	color: #ffd900;
+}
+
+/* Hover highlights */
+input:checked + label.lblRating:hover, input:checked ~ label.lblRating:hover, /* highlight current and previous stars */
+input:checked ~ label.lblRating:hover ~ label.lblRating, /* highlight previous selected stars for new rating */
+label.lblRating:hover ~ input:checked ~ label.lblRating /* highlight previous selected stars */
+{
+	color: #f0cc00;
+}
+
+.formMessage {
+  padding-left: 2px;
+  border-style: solid;
+  border-color: darkblue;
+  border-radius: 5px;
+  margin-left: 10px;
+  width: 97%;
+  height: 200px;
+  resize: none;
+}
+
+.submit-btn{
+  color: white;
+  padding-left: 2px;
+  border-style: solid;
+  border-color: darkblue;
+  border-radius: 5px;
+  margin-left: 10px;
+  font-size: 22px;
+  font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  text-shadow: -1px -1px 0 darkblue, 1px -1px 0 darkblue, -1px 1px 0 darkblue, 1px 1px 0 darkblue;
+}
+
+.submit-btn:hover{
+  background-color: blue;
 }

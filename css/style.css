@@ -177,7 +177,7 @@ h3 {
 }
 
 
-#hero-desc1 {
+#hero-1 {
   border-style: solid;
   border-color: darkblue;
   border-radius: 15px;
@@ -192,7 +192,7 @@ h3 {
   text-shadow: -1px -1px 0 darkblue, 1px -1px 0 darkblue, -1px 1px 0 darkblue, 1px 1px 0 darkblue;
 }
 
-.hero-desc2 {
+.hero-2 {
   border-style: solid;
   border-color: darkblue;
   border-radius: 15px;
@@ -323,4 +323,24 @@ label.lblRating:hover ~ input:checked ~ label.lblRating /* highlight previous se
 
 .submit-btn:hover{
   background-color: blue;
+}
+
+#reviews{
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-style: solid;
+  border-color: darkblue;
+  border-radius: 5px;
+}
+
+.hero-3 {
+  word-wrap: normal;
+  color: white;
+  width: 95%;
+  margin-left: 3px;
+  padding-left: 5px;
+  font-size: 20px;
+  font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  text-shadow: -1px -1px 0 darkblue, 1px -1px 0 darkblue, -1px 1px 0 darkblue, 1px 1px 0 darkblue;
 }

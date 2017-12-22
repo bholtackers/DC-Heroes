@@ -21,6 +21,12 @@ if (isset($_GET['teamId'])) {
     $sql3 ="SELECT * FROM team where teamId=1";
 }
 
+if (isset($_GET['heroId'])) {
+    $heroId = $_GET['heroId'];
+    $sql4 ="SELECT * FROM rating Where heroId='".$heroId."'";
+} else {
+    $sql4 ="SELECT * FROM rating where teamId=1";
+}
 
 ?>
 
@@ -29,7 +35,6 @@ if (isset($_GET['teamId'])) {
 <head>
 	<meta charset="UTF-8">
 	<meta name="description" content="DC Heroes">
-  <link rel="shortcut icon" href="img/DC.ico">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>DC Heroes</title>
 </head>
@@ -64,7 +69,7 @@ if (isset($_GET['teamId'])) {
 			<div id="heroes">
 				<img id="hero-image" src= <?php echo $row['heroImage']; ?> >
 				<p id="hero-name"> <?php echo $row['heroName']; ?></p>
-				<p id="hero-desc1"> <?php echo $row['heroDescription']; ?></p> </br>
+				<p id="hero-1"> <?php echo $row['heroDescription']; ?></p> </br>
         <a href="index.php?teamId=<?php echo $row['teamId']; ?>&heroId=<?php echo $row['heroId']; ?>">
         <nav id="info">info</nav>
       </a>
@@ -85,9 +90,9 @@ if (isset($_GET['teamId'])) {
                           ?>
                           <h2> <?php echo $row2['heroName']; ?></h2> </br>
                           <h3>Info</h3>
-                          <p class="hero-desc2"> <?php echo $row2['heroInfo']; ?></p>
+                          <p class="hero-2"> <?php echo $row2['heroInfo']; ?></p>
                           <h3>Powers</h3>
-                          <p class="hero-desc2"> <?php echo $row2['heroPower']; ?></p>
+                          <p class="hero-2"> <?php echo $row2['heroPower']; ?></p>
                           <form method="POST" class="form-rate">
     <div class="rate">
       <input type="radio" id="rating10" name="rating" value="10" /><label class="lblRating" for="rating10" title="5 stars"></label>
@@ -110,6 +115,26 @@ if (isset($_GET['teamId'])) {
       <input type="hidden" name="heroId" value=""/>
     </div>
 </form>
+
+<div id="reviews">
+  <?php
+              $result4 = $conn->query($sql4);
+
+                          if ($result4->num_rows > 0) {
+                              while ($row4 = $result4->fetch_assoc()) {
+                                  ?>
+  <div id="text-review">
+    <p class="hero-3"> <?php echo $row4['ratingReview'] ?> </p>
+  </div>
+  <div id="date-review">
+        <p class="hero-3"> -<?php echo $row4['ratingDate'] ?> </p>
+  </div>
+  <?php
+                              }
+                          } else {
+                              echo "Bamboozeled";
+                          } ?>
+</div>
 <?php
                       }
                   } else {

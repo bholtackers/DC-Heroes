@@ -93,9 +93,9 @@ if (isset($_GET['heroId'])) {
                           <p class="hero-2"> <?php echo $row2['heroInfo']; ?></p>
                           <h3>Powers</h3>
                           <p class="hero-2"> <?php echo $row2['heroPower']; ?></p>
-                          <form method="POST" class="form-rate">
+                          <form action="inc/Insert.php" method="POST" class="form-rate">
     <div class="rate">
-      <input type="radio" id="rating10" name="rating" value="10" /><label class="lblRating" for="rating10" title="5 stars"></label>
+      <input required type="radio" id="rating10" name="rating" value="10" /><label class="lblRating" for="rating10" title="5 stars"></label>
         <input type="radio" id="rating9" name="rating" value="9" /><label class="lblRating half" for="rating9" title="4 1/2 stars"></label>
       <input type="radio" id="rating8" name="rating" value="8" /><label class="lblRating" for="rating8" title="4 stars"></label>
         <input type="radio" id="rating7" name="rating" value="7" /><label class="lblRating half" for="rating7" title="3 1/2 stars"></label>
@@ -108,11 +108,11 @@ if (isset($_GET['heroId'])) {
       <input type="radio" id="rating0" name="rating" value="0" /><label class="lblRating" for="rating0" title="No star"></label>
     </div>
     <div class="review">
-      <textarea class="formMessage" name="review" placeholder="Please write a review for the hero"></textarea>
+      <textarea class="formMessage" name="review" placeholder="Please write a review for the hero" required></textarea>
     </div>
     <div class="rate-submit">
-      <input class="submit-btn" type="submit" name="submitRating" value="Rate Hero"/>
-      <input type="hidden" name="heroId" value=""/>
+      <input class="submit-btn" type="submit" name="submitRating" value="Rate Hero" required/>
+      <input type="hidden" name="heroId" value="" required/>
     </div>
 </form>
 

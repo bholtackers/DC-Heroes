@@ -1,4 +1,4 @@
-<nav id="main-nav">
+<nav id="main-nav"> 
   <ul>
     <li><a href="index.php?teamId=1">Justice League </a></li>
     <li><a href="index.php?teamId=2">Flash Family</a></li>

@@ -1,11 +1,19 @@
 <?php
 include 'Connection.php';
 
+$hero = $_POST['heroId'];
 $rating = $_POST['rating'];
 $review = $_POST['review'];
-$date = date('Y-m-d H:i:s');
+$date = (strftime("%Y. %B %d. %A. %X"));
+$timestamp = strtotime($date);
 
 
-$sql5 = "INSERT INTO rating (heroId, rating, ratingDate, ratingReview) VALUES ('1', '$rating', '$date', '$review')";
+$sql5 =  "INSERT INTO rating (heroId, rating, ratingDate, ratingReview) VALUES ('$hero', '$rating', NOW(), '$review')";
 
-header("refresh:2; url=../index.php");
+if ($conn->query($sql5) === true) {
+    echo "The hero has been rated sucesfully";
+} else {
+    echo "Error: " . $sql5 . "<br>" . $conn->error;
+}
+
+header("refresh:1; url=../index.php");

@@ -93,7 +93,7 @@ if (isset($_GET['heroId'])) {
                           <p class="hero-2"> <?php echo $row2['heroInfo']; ?></p>
                           <h3>Powers</h3>
                           <p class="hero-2"> <?php echo $row2['heroPower']; ?></p>
-                          <form action="inc/Insert.php" method="POST" class="form-rate">
+                          <form action="inc/Insert.php?heroId=<?php echo $row2['heroId']; ?>" method="POST" class="form-rate">
     <div class="rate">
       <input required type="radio" id="rating10" name="rating" value="10" /><label class="lblRating" for="rating10" title="5 stars"></label>
         <input type="radio" id="rating9" name="rating" value="9" /><label class="lblRating half" for="rating9" title="4 1/2 stars"></label>
@@ -112,7 +112,7 @@ if (isset($_GET['heroId'])) {
     </div>
     <div class="rate-submit">
       <input class="submit-btn" type="submit" name="submitRating" value="Rate Hero" required/>
-      <input type="hidden" name="heroId" value="" required/>
+      <input type="hidden" name="heroId" value="<?php echo $row2['heroId']; ?>" required/>
     </div>
 </form>
 
@@ -132,7 +132,8 @@ if (isset($_GET['heroId'])) {
   <?php
                               }
                           } else {
-                              echo "Bamboozeled";
+                              ?>
+                          <p class="hero-3"> <?php echo "No reviews have been written yet for this hero. Be the first one to do so by writing one now!"; ?> </p> <?php
                           } ?>
 </div>
 <?php

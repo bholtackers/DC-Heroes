@@ -36,7 +36,7 @@ if (isset($_GET['teamId'])) {
 
 if (isset($_GET['heroId'])) {
     $heroId = $_GET['heroId'];
-    $sql7 ="SELECT AVG(rating) AS rating_avg FROM rating Where heroId='".$heroId."'";
+    $sql7 ="SELECT ROUND(AVG(rating), 1) AS rating_avg FROM rating Where heroId='".$heroId."'";
 } else {
     $sql7 ="SELECT * FROM rating where heroId=0";
 }

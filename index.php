@@ -5,12 +5,7 @@ include 'inc/sql.php';
 
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="description" content="DC Heroes">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<title>DC Heroes</title>
-</head>
+<?php include 'inc/Head.php'; ?>
 <body>
 	<?php include 'inc/Header.php'; ?>
   <?php include 'inc/Containers.php'; ?>

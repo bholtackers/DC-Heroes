@@ -39,12 +39,10 @@ h3 {
   color: white;
   padding-top: 10px;
   padding-left: 10px;
-  font-size: 20px;
+  font-size: 23px;
   font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
   text-shadow: -1px -1px 0 darkblue, 1px -1px 0 darkblue, -1px 1px 0 darkblue, 1px 1px 0 darkblue;
 }
-
-
 
 #header-logo {
   float: left;
@@ -155,7 +153,7 @@ h3 {
 #heroes {
   width: 98%;
   height: 290px;
-  border-color: black;
+  border-color: darkblue;
   border-style: solid;
   margin-top: 5px;
 }
@@ -172,6 +170,17 @@ h3 {
   width: 35%;
   height: 290px;
   float: left;
+}
+#hero-image-2 {
+  width: 30%;
+  height: 185px;
+  border-radius: 50%;
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-color: darkblue;
+  border-style: solid;
+  border-width: 4px;
 }
 
 #hero-name {

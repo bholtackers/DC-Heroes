@@ -1,7 +1,7 @@
       @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 
 body {
-  background-color: white;
+  background-color: rgb(57, 117, 218);
   margin: 0px;
   padding: 0px;
 }
@@ -19,6 +19,7 @@ h1 {
   margin: 0px;
   color: white;
   float: left;
+  margin-left: 10px;
   padding-top: 40px;
   font-size: 100px;
   font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif;

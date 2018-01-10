@@ -61,7 +61,7 @@
       <p class="hero-2"> <?php echo $row2['heroInfo']; ?></p>
       <h3>Powers</h3>
       <p class="hero-2"> <?php echo $row2['heroPower']; ?></p>
-      <form action="inc/Insert.php?heroId=<?php echo $row2['heroId']; ?>" method="POST" class="form-rate">
+      <form action="Insert.php?heroId=<?php echo $row2['heroId']; ?>" method="POST" class="form-rate">
         <div class="rate">
           <input required type="radio" id="rating10" name="rating" value="10" /><label class="lblRating" for="rating10" title="5 stars"></label>
           <input type="radio" id="rating9" name="rating" value="9" /><label class="lblRating half" for="rating9" title="4 1/2 stars"></label>

@@ -13,7 +13,7 @@ include 'inc/sql.php';
 </head>
 <body>
 	<?php include 'inc/Header.php'; ?>
-  <?php include 'inc/Containters.php'; ?>
+  <?php include 'inc/Containers.php'; ?>
 	<?php include 'inc/Footer.php'; ?>
 </body>
 </html>

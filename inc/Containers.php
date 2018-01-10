@@ -45,7 +45,18 @@
 
                 if ($result2->num_rows > 0) {
                     while ($row2 = $result2->fetch_assoc()) {
-                        ?>
+                        $result7 = $conn->query($sql7);
+
+                        if ($result7->num_rows > 0) {
+                            while ($row7 = $result7->fetch_assoc()) {
+                                ?>
+                        <h3> <?php echo "The average rating of the hero is: " .  $row7['rating_avg'] . "/10"; ?></h3> </br>
+                                        <?php
+                            }
+                        } else {
+                            ?>
+                        <p class="hero-3"> <?php echo "This hero hasn't gotten a rating yet"; ?> </p> <?php
+                        } ?>
                         <h2> <?php echo $row2['heroName']; ?></h2> </br>
                         <h3>Info</h3>
                         <p class="hero-2"> <?php echo $row2['heroInfo']; ?></p>
@@ -85,7 +96,7 @@
   <p class="hero-3"> <?php echo $row4['ratingReview'] ?> </p>
 </div>
 <div id="date-review">
-      <p class="hero-3"> -<?php echo $row4['ratingDate'] ?> </p>
+      <p class="hero-3"> <?php echo strftime("%d - %B - %Y - %X ", $row4['ratingDate']) ?> </p>
 </div>
 <?php
                             }

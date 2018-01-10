@@ -31,5 +31,12 @@ if (isset($_GET['teamId'])) {
     $teamId = $_GET['teamId'];
     $sql6 ="SELECT * FROM team";
 } else {
-    $sql6 ="SELECT * FROM team where teamId=0";
+    $sql6 ="SELECT * FROM team where teamId=1 || 2";
+}
+
+if (isset($_GET['heroId'])) {
+    $heroId = $_GET['heroId'];
+    $sql7 ="SELECT AVG(rating) AS rating_avg FROM rating Where heroId='".$heroId."'";
+} else {
+    $sql7 ="SELECT * FROM rating where heroId=0";
 }

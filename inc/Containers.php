@@ -46,7 +46,7 @@
                     while ($row7 = $result7->fetch_assoc()) {
                         ?>
       <img id="hero-image-2" src= <?php echo $row2['heroImage']; ?> >
-      <h3> <?php echo "The average rating of the hero is: " .  $row7['rating_avg'] . "/10"; ?>
+      <h3> <?php echo "The average rating of the hero is: " .  $row7['rating_avg'] . "/5.0"; ?>
         <i class="fa fa-star" aria-hidden="true"></i>
       </h3></br>
     <?php
@@ -59,20 +59,20 @@
       <h2> <?php echo $row2['heroName']; ?></h2></br>
       <h3>Info</h3> </br>
       <p class="hero-2"> <?php echo $row2['heroInfo']; ?></p>
-      <h3>Powers</h3>
+      <h3 class="h3-2">Powers</h3>
       <p class="hero-2"> <?php echo $row2['heroPower']; ?></p>
       <form action="Insert.php?heroId=<?php echo $row2['heroId']; ?>" method="POST" class="form-rate">
         <div class="rate">
-          <input required type="radio" id="rating10" name="rating" value="10" /><label class="lblRating" for="rating10" title="5 stars"></label>
-          <input type="radio" id="rating9" name="rating" value="9" /><label class="lblRating half" for="rating9" title="4 1/2 stars"></label>
-          <input type="radio" id="rating8" name="rating" value="8" /><label class="lblRating" for="rating8" title="4 stars"></label>
-          <input type="radio" id="rating7" name="rating" value="7" /><label class="lblRating half" for="rating7" title="3 1/2 stars"></label>
-          <input type="radio" id="rating6" name="rating" value="6" /><label class="lblRating" for="rating6" title="3 stars"></label>
-          <input type="radio" id="rating5" name="rating" value="5" /><label class="lblRating half" for="rating5" title="2 1/2 stars"></label>
-          <input type="radio" id="rating4" name="rating" value="4" /><label class="lblRating" for="rating4" title="2 stars"></label>
-          <input type="radio" id="rating3" name="rating" value="3" /><label class="lblRating half" for="rating3" title="1 1/2 stars"></label>
-          <input type="radio" id="rating2" name="rating" value="2" /><label class="lblRating" for="rating2" title="1 star"></label>
-          <input type="radio" id="rating1" name="rating" value="1" /><label class="lblRating half" for="rating1" title="1/2 star"></label>
+          <input required type="radio" id="rating10" name="rating" value="5" /><label class="lblRating" for="rating10" title="5 stars"></label>
+          <input type="radio" id="rating9" name="rating" value="4.5" /><label class="lblRating half" for="rating9" title="4 1/2 stars"></label>
+          <input type="radio" id="rating8" name="rating" value="4" /><label class="lblRating" for="rating8" title="4 stars"></label>
+          <input type="radio" id="rating7" name="rating" value="3.5" /><label class="lblRating half" for="rating7" title="3 1/2 stars"></label>
+          <input type="radio" id="rating6" name="rating" value="3" /><label class="lblRating" for="rating6" title="3 stars"></label>
+          <input type="radio" id="rating5" name="rating" value="2.5" /><label class="lblRating half" for="rating5" title="2 1/2 stars"></label>
+          <input type="radio" id="rating4" name="rating" value="2" /><label class="lblRating" for="rating4" title="2 stars"></label>
+          <input type="radio" id="rating3" name="rating" value="1.5" /><label class="lblRating half" for="rating3" title="1 1/2 stars"></label>
+          <input type="radio" id="rating2" name="rating" value="1" /><label class="lblRating" for="rating2" title="1 star"></label>
+          <input type="radio" id="rating1" name="rating" value="0.5" /><label class="lblRating half" for="rating1" title="1/2 star"></label>
           <input type="radio" id="rating0" name="rating" value="0" /><label class="lblRating" for="rating0" title="No star"></label>
         </div>
           <div class="review">

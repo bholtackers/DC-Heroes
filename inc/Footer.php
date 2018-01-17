@@ -1,5 +1,6 @@
 <footer id="footer">
 
-  © 2018
+  © <?php echo date("Y")?> </br>
+  - Bram Holtackers
 
 </footer>

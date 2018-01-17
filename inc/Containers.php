@@ -26,7 +26,7 @@
       <p id="hero-name"> <?php echo $row['heroName']; ?></p>
       <p id="hero-1"> <?php echo $row['heroDescription']; ?></p> </br>
       <a href="index.php?teamId=<?php echo $row['teamId']; ?>&heroId=<?php echo $row['heroId']; ?>">
-      <nav id="info">info</nav>
+      <nav  id="info"> <i class="fa fa-info-circle" aria-hidden="true"></i> info</nav>
     </a>
     </div>
     <?php
@@ -57,8 +57,8 @@
       <?php
                 } ?>
       <h2> <?php echo $row2['heroName']; ?></h2></br>
-      <h3>Info</h3> </br>
-      <p class="hero-2"> <?php echo $row2['heroInfo']; ?></p>
+      <h3> <i class="fa fa-info-circle" aria-hidden="true"></i> Info</h3> </br>
+      <p  class="hero-2"> <?php echo $row2['heroInfo']; ?></p>
       <h3 class="h3-2">Powers</h3>
       <p class="hero-2"> <?php echo $row2['heroPower']; ?></p>
       <form action="Insert.php?heroId=<?php echo $row2['heroId']; ?>" method="POST" class="form-rate">

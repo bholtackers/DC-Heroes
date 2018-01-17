@@ -24,7 +24,7 @@ header("refresh:2; url=index.php?teamId=$team&heroId=$hero");
 <?php include 'inc/Head.php';?>
 <body>
   <?php include 'inc/Header.php'; ?>
-    <h1>The hero has been rated succesfully!</h1>
+    <h1>The hero has been rated succesfully! <i class="fa fa-thumbs-o-up" aria-hidden="true"></i></h1>
   <?php include 'inc/Footer.php'; ?>
 </body>
 </html>
